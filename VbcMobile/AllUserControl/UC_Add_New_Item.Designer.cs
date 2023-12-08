@@ -122,7 +122,7 @@
             this.txtModle.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtModle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtModle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtModle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtModle.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModle.ForeColor = System.Drawing.Color.White;
             this.txtModle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtModle.Location = new System.Drawing.Point(113, 320);
@@ -198,7 +198,6 @@
             // btnReset
             // 
             this.btnReset.BorderRadius = 20;
-            this.btnReset.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnReset.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnReset.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btnReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -211,7 +210,7 @@
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnReset.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnReset.Location = new System.Drawing.Point(456, 525);
+            this.btnReset.Location = new System.Drawing.Point(456, 530);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(127, 45);
             this.btnReset.TabIndex = 16;
@@ -234,7 +233,7 @@
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSave.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSave.Location = new System.Drawing.Point(215, 525);
+            this.btnSave.Location = new System.Drawing.Point(632, 530);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(127, 45);
             this.btnSave.TabIndex = 17;
@@ -250,7 +249,7 @@
             this.txtBrandName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBrandName.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBrandName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBrandName.Font = new System.Drawing.Font("Gadugi", 12F);
+            this.txtBrandName.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBrandName.ForeColor = System.Drawing.Color.White;
             this.txtBrandName.ItemHeight = 30;
             this.txtBrandName.Items.AddRange(new object[] {
@@ -284,7 +283,7 @@
             this.txtModleNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtModleNumber.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtModleNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtModleNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtModleNumber.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModleNumber.ForeColor = System.Drawing.Color.White;
             this.txtModleNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtModleNumber.Location = new System.Drawing.Point(113, 445);
@@ -349,11 +348,11 @@
             this.txtQty.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtQty.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtQty.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQty.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQty.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQty.ForeColor = System.Drawing.Color.White;
             this.txtQty.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQty.Location = new System.Drawing.Point(528, 131);
-            this.txtQty.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtQty.Margin = new System.Windows.Forms.Padding(5);
             this.txtQty.Name = "txtQty";
             this.txtQty.PasswordChar = '\0';
             this.txtQty.PlaceholderForeColor = System.Drawing.Color.DarkGray;

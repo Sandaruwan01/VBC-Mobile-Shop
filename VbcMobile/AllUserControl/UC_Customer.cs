@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DGVPrinterHelper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,7 +49,7 @@ namespace VbcMobile.AllUserControl
         { 
             txtBrand.Items.Clear();
             String Iname = txtItem.Text;
-            query = "select bname from addItem where Iname = '"+Iname+"'";
+            query = "select distinct bname from addItem where Iname = '"+Iname+"'";
             setComboBox(query, txtBrand);
         }
 
@@ -56,7 +57,7 @@ namespace VbcMobile.AllUserControl
         {
             txtModle.Items.Clear();
             String bname = txtBrand.Text;
-            query = " select mdName from addItem where bname = '"+bname+"'";
+            query = " select distinct mdName from addItem where bname = '"+bname+"'";
             setComboBox(query, txtModle);
         }
 
@@ -64,7 +65,7 @@ namespace VbcMobile.AllUserControl
         {
             txtModleNumber.Items.Clear();
             String mdName = txtModle.Text;
-            query = "select mdnum from addItem where mdName = '" + mdName + "'";
+            query = "select distinct mdnum from addItem where mdName = '" + mdName + "'";
             setComboBox(query, txtModleNumber);
         }
 
@@ -111,6 +112,8 @@ namespace VbcMobile.AllUserControl
                 txtImei.Clear();
                 txtPrice.Clear();
 
+                
+
 
             }
 
@@ -121,6 +124,9 @@ namespace VbcMobile.AllUserControl
 
         }
 
-        
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

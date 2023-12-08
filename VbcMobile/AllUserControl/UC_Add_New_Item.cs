@@ -21,20 +21,6 @@ namespace VbcMobile.AllUserControl
             InitializeComponent();
         }
 
-        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {

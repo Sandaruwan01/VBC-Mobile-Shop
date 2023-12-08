@@ -239,7 +239,7 @@
             this.labelPrice.AutoSize = true;
             this.labelPrice.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.labelPrice.Location = new System.Drawing.Point(334, 502);
+            this.labelPrice.Location = new System.Drawing.Point(281, 482);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(79, 35);
             this.labelPrice.TabIndex = 14;
@@ -257,11 +257,11 @@
             this.btnPurches.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnPurches.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurches.ForeColor = System.Drawing.Color.Black;
-            this.btnPurches.Location = new System.Drawing.Point(328, 538);
+            this.btnPurches.Location = new System.Drawing.Point(367, 525);
             this.btnPurches.Name = "btnPurches";
-            this.btnPurches.Size = new System.Drawing.Size(262, 45);
+            this.btnPurches.Size = new System.Drawing.Size(205, 33);
             this.btnPurches.TabIndex = 21;
-            this.btnPurches.Text = "Print Bill";
+            this.btnPurches.Text = "Save";
             this.btnPurches.Click += new System.EventHandler(this.btnPurches_Click);
             // 
             // guna2Elipse1
@@ -343,13 +343,13 @@
             this.txtPrice.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrice.Location = new System.Drawing.Point(328, 493);
+            this.txtPrice.Location = new System.Drawing.Point(367, 480);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';
             this.txtPrice.PlaceholderText = "";
             this.txtPrice.SelectedText = "";
-            this.txtPrice.Size = new System.Drawing.Size(262, 37);
+            this.txtPrice.Size = new System.Drawing.Size(205, 37);
             this.txtPrice.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtPrice.TabIndex = 27;
             this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -377,7 +377,7 @@
             this.txtImei.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtImei.ForeColor = System.Drawing.Color.White;
             this.txtImei.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtImei.Location = new System.Drawing.Point(513, 407);
+            this.txtImei.Location = new System.Drawing.Point(513, 417);
             this.txtImei.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtImei.Name = "txtImei";
             this.txtImei.PasswordChar = '\0';

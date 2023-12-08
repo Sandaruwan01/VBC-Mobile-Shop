@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Stock));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.txtSearchBy = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtSearchBy1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.labelTOSET = new System.Windows.Forms.Label();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.labelTOSET1 = new System.Windows.Forms.Label();
+            this.txtSearch1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSearch1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblqty = new System.Windows.Forms.Label();
             this.lblModNum = new System.Windows.Forms.Label();
@@ -54,7 +54,23 @@
             this.lb = new System.Windows.Forms.Label();
             this.lblNote = new System.Windows.Forms.TextBox();
             this.DataArray = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.midDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mdnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mdnumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.otimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addItemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vbcbaseDataSet5 = new VbcMobile.vbcbaseDataSet5();
+            this.addItemTableAdapter = new VbcMobile.vbcbaseDataSet5TableAdapters.addItemTableAdapter();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataArray)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addItemBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vbcbaseDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -74,228 +90,229 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // txtSearchBy
+            // txtSearchBy1
             // 
-            this.txtSearchBy.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchBy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtSearchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtSearchBy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSearchBy.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBy.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchBy.ForeColor = System.Drawing.Color.White;
-            this.txtSearchBy.ItemHeight = 30;
-            this.txtSearchBy.Items.AddRange(new object[] {
-            "Customer Name",
-            "Phone Number"});
-            this.txtSearchBy.Location = new System.Drawing.Point(317, 81);
-            this.txtSearchBy.Name = "txtSearchBy";
-            this.txtSearchBy.Size = new System.Drawing.Size(183, 36);
-            this.txtSearchBy.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtSearchBy.TabIndex = 25;
-            this.txtSearchBy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSearchBy1.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearchBy1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtSearchBy1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtSearchBy1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearchBy1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchBy1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchBy1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchBy1.ForeColor = System.Drawing.Color.White;
+            this.txtSearchBy1.ItemHeight = 30;
+            this.txtSearchBy1.Items.AddRange(new object[] {
+            "Item",
+            "Brand"});
+            this.txtSearchBy1.Location = new System.Drawing.Point(489, 52);
+            this.txtSearchBy1.Name = "txtSearchBy1";
+            this.txtSearchBy1.Size = new System.Drawing.Size(207, 36);
+            this.txtSearchBy1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtSearchBy1.TabIndex = 25;
+            this.txtSearchBy1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSearchBy1.SelectedIndexChanged += new System.EventHandler(this.txtSearchBy1_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(360, 63);
+            this.label3.Location = new System.Drawing.Point(353, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 24);
+            this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 26;
             this.label3.Text = "Search By";
             // 
-            // labelTOSET
+            // labelTOSET1
             // 
-            this.labelTOSET.AutoSize = true;
-            this.labelTOSET.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTOSET.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.labelTOSET.Location = new System.Drawing.Point(342, 120);
-            this.labelTOSET.Name = "labelTOSET";
-            this.labelTOSET.Size = new System.Drawing.Size(134, 20);
-            this.labelTOSET.TabIndex = 27;
-            this.labelTOSET.Text = "Customer Name";
+            this.labelTOSET1.AutoSize = true;
+            this.labelTOSET1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTOSET1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.labelTOSET1.Location = new System.Drawing.Point(353, 95);
+            this.labelTOSET1.Name = "labelTOSET1";
+            this.labelTOSET1.Size = new System.Drawing.Size(0, 25);
+            this.labelTOSET1.TabIndex = 27;
             // 
-            // txtSearch
+            // txtSearch1
             // 
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.White;
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(317, 133);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(195, 30);
-            this.txtSearch.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtSearch.TabIndex = 28;
-            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSearch1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch1.DefaultText = "";
+            this.txtSearch1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearch1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch1.ForeColor = System.Drawing.Color.White;
+            this.txtSearch1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch1.Location = new System.Drawing.Point(489, 90);
+            this.txtSearch1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch1.Name = "txtSearch1";
+            this.txtSearch1.PasswordChar = '\0';
+            this.txtSearch1.PlaceholderText = "";
+            this.txtSearch1.SelectedText = "";
+            this.txtSearch1.Size = new System.Drawing.Size(207, 30);
+            this.txtSearch1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtSearch1.TabIndex = 28;
+            this.txtSearch1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnSearch
+            // btnSearch1
             // 
-            this.btnSearch.CheckedState.ImageSize = new System.Drawing.Size(55, 55);
-            this.btnSearch.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnSearch.ImageRotate = 0F;
-            this.btnSearch.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnSearch.Location = new System.Drawing.Point(518, 130);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnSearch.Size = new System.Drawing.Size(56, 33);
-            this.btnSearch.TabIndex = 29;
+            this.btnSearch1.CheckedState.ImageSize = new System.Drawing.Size(55, 55);
+            this.btnSearch1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnSearch1.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch1.Image")));
+            this.btnSearch1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnSearch1.ImageRotate = 0F;
+            this.btnSearch1.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnSearch1.Location = new System.Drawing.Point(702, 87);
+            this.btnSearch1.Name = "btnSearch1";
+            this.btnSearch1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnSearch1.Size = new System.Drawing.Size(56, 33);
+            this.btnSearch1.TabIndex = 29;
+            this.btnSearch1.Click += new System.EventHandler(this.btnSearch1_Click);
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Location = new System.Drawing.Point(523, 527);
+            this.lblPrice.Location = new System.Drawing.Point(506, 527);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(117, 20);
+            this.lblPrice.Size = new System.Drawing.Size(147, 27);
             this.lblPrice.TabIndex = 41;
             this.lblPrice.Text = "...........................";
             // 
             // lblqty
             // 
             this.lblqty.AutoSize = true;
-            this.lblqty.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblqty.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblqty.ForeColor = System.Drawing.Color.White;
-            this.lblqty.Location = new System.Drawing.Point(523, 488);
+            this.lblqty.Location = new System.Drawing.Point(506, 488);
             this.lblqty.Name = "lblqty";
-            this.lblqty.Size = new System.Drawing.Size(117, 20);
+            this.lblqty.Size = new System.Drawing.Size(147, 27);
             this.lblqty.TabIndex = 40;
             this.lblqty.Text = "...........................";
             // 
             // lblModNum
             // 
             this.lblModNum.AutoSize = true;
-            this.lblModNum.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModNum.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModNum.ForeColor = System.Drawing.Color.White;
-            this.lblModNum.Location = new System.Drawing.Point(523, 447);
+            this.lblModNum.Location = new System.Drawing.Point(506, 447);
             this.lblModNum.Name = "lblModNum";
-            this.lblModNum.Size = new System.Drawing.Size(117, 20);
+            this.lblModNum.Size = new System.Drawing.Size(147, 27);
             this.lblModNum.TabIndex = 39;
             this.lblModNum.Text = "...........................";
             // 
             // lblModName
             // 
             this.lblModName.AutoSize = true;
-            this.lblModName.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModName.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModName.ForeColor = System.Drawing.Color.White;
-            this.lblModName.Location = new System.Drawing.Point(265, 527);
+            this.lblModName.Location = new System.Drawing.Point(228, 527);
             this.lblModName.Name = "lblModName";
-            this.lblModName.Size = new System.Drawing.Size(117, 20);
+            this.lblModName.Size = new System.Drawing.Size(147, 27);
             this.lblModName.TabIndex = 38;
             this.lblModName.Text = "...........................";
             // 
             // lblBrand
             // 
             this.lblBrand.AutoSize = true;
-            this.lblBrand.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrand.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBrand.ForeColor = System.Drawing.Color.White;
-            this.lblBrand.Location = new System.Drawing.Point(265, 488);
+            this.lblBrand.Location = new System.Drawing.Point(228, 488);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(117, 20);
+            this.lblBrand.Size = new System.Drawing.Size(147, 27);
             this.lblBrand.TabIndex = 37;
             this.lblBrand.Text = "...........................";
             // 
             // lblItem
             // 
             this.lblItem.AutoSize = true;
-            this.lblItem.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItem.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblItem.ForeColor = System.Drawing.Color.White;
-            this.lblItem.Location = new System.Drawing.Point(265, 447);
+            this.lblItem.Location = new System.Drawing.Point(228, 447);
             this.lblItem.Name = "lblItem";
-            this.lblItem.Size = new System.Drawing.Size(117, 20);
+            this.lblItem.Size = new System.Drawing.Size(147, 27);
             this.lblItem.TabIndex = 36;
             this.lblItem.Text = "...........................";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label9.Location = new System.Drawing.Point(399, 527);
+            this.label9.Location = new System.Drawing.Point(362, 527);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 20);
+            this.label9.Size = new System.Drawing.Size(111, 27);
             this.label9.TabIndex = 35;
             this.label9.Text = "Unit Price";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(399, 488);
+            this.label7.Location = new System.Drawing.Point(362, 488);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 20);
+            this.label7.Size = new System.Drawing.Size(88, 27);
             this.label7.TabIndex = 34;
             this.label7.Text = "Quntity";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label6.Location = new System.Drawing.Point(399, 447);
+            this.label6.Location = new System.Drawing.Point(362, 447);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 20);
+            this.label6.Size = new System.Drawing.Size(168, 27);
             this.label6.TabIndex = 33;
             this.label6.Text = "Modle Number";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label5.Location = new System.Drawing.Point(142, 527);
+            this.label5.Location = new System.Drawing.Point(105, 527);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 20);
+            this.label5.Size = new System.Drawing.Size(145, 27);
             this.label5.TabIndex = 32;
             this.label5.Text = "Modle Name";
             // 
             // l
             // 
             this.l.AutoSize = true;
-            this.l.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.l.Location = new System.Drawing.Point(142, 488);
+            this.l.Location = new System.Drawing.Point(105, 488);
             this.l.Name = "l";
-            this.l.Size = new System.Drawing.Size(54, 20);
+            this.l.Size = new System.Drawing.Size(72, 27);
             this.l.TabIndex = 31;
             this.l.Text = "Brand";
             // 
             // lb
             // 
             this.lb.AutoSize = true;
-            this.lb.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lb.Location = new System.Drawing.Point(142, 447);
+            this.lb.Location = new System.Drawing.Point(105, 447);
             this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(44, 20);
+            this.lb.Size = new System.Drawing.Size(58, 27);
             this.lb.TabIndex = 30;
             this.lb.Text = "Item";
             // 
             // lblNote
             // 
             this.lblNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNote.Font = new System.Drawing.Font("Gadugi", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNote.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNote.ForeColor = System.Drawing.Color.Yellow;
-            this.lblNote.Location = new System.Drawing.Point(646, 455);
+            this.lblNote.Location = new System.Drawing.Point(641, 455);
             this.lblNote.Multiline = true;
             this.lblNote.Name = "lblNote";
-            this.lblNote.Size = new System.Drawing.Size(184, 126);
+            this.lblNote.Size = new System.Drawing.Size(184, 125);
             this.lblNote.TabIndex = 42;
             this.lblNote.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -303,34 +320,48 @@
             // 
             this.DataArray.AllowUserToAddRows = false;
             this.DataArray.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.DataArray.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataArray.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DataArray.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DataArray.AutoGenerateColumns = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataArray.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataArray.ColumnHeadersHeight = 29;
             this.DataArray.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataArray.DefaultCellStyle = dataGridViewCellStyle9;
+            this.DataArray.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.midDataGridViewTextBoxColumn,
+            this.inameDataGridViewTextBoxColumn,
+            this.bnameDataGridViewTextBoxColumn,
+            this.mdnameDataGridViewTextBoxColumn,
+            this.mdnumDataGridViewTextBoxColumn,
+            this.qtyDataGridViewTextBoxColumn,
+            this.noteDataGridViewTextBoxColumn,
+            this.priceDataGridViewTextBoxColumn,
+            this.date1DataGridViewTextBoxColumn,
+            this.otimeDataGridViewTextBoxColumn});
+            this.DataArray.DataSource = this.addItemBindingSource;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataArray.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataArray.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.DataArray.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataArray.Location = new System.Drawing.Point(48, 216);
+            this.DataArray.Location = new System.Drawing.Point(32, 151);
             this.DataArray.Name = "DataArray";
+            this.DataArray.ReadOnly = true;
             this.DataArray.RowHeadersVisible = false;
             this.DataArray.RowHeadersWidth = 51;
             this.DataArray.RowTemplate.Height = 24;
-            this.DataArray.Size = new System.Drawing.Size(782, 194);
+            this.DataArray.Size = new System.Drawing.Size(805, 263);
             this.DataArray.TabIndex = 43;
             this.DataArray.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataArray.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -345,7 +376,7 @@
             this.DataArray.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.DataArray.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataArray.ThemeStyle.HeaderStyle.Height = 29;
-            this.DataArray.ThemeStyle.ReadOnly = false;
+            this.DataArray.ThemeStyle.ReadOnly = true;
             this.DataArray.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.DataArray.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataArray.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -355,11 +386,117 @@
             this.DataArray.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.DataArray.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataArray_CellClick);
             // 
+            // midDataGridViewTextBoxColumn
+            // 
+            this.midDataGridViewTextBoxColumn.DataPropertyName = "mid";
+            this.midDataGridViewTextBoxColumn.HeaderText = "MID";
+            this.midDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.midDataGridViewTextBoxColumn.Name = "midDataGridViewTextBoxColumn";
+            this.midDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // inameDataGridViewTextBoxColumn
+            // 
+            this.inameDataGridViewTextBoxColumn.DataPropertyName = "iname";
+            this.inameDataGridViewTextBoxColumn.HeaderText = "Item";
+            this.inameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.inameDataGridViewTextBoxColumn.Name = "inameDataGridViewTextBoxColumn";
+            this.inameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bnameDataGridViewTextBoxColumn
+            // 
+            this.bnameDataGridViewTextBoxColumn.DataPropertyName = "bname";
+            this.bnameDataGridViewTextBoxColumn.HeaderText = "Brand";
+            this.bnameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bnameDataGridViewTextBoxColumn.Name = "bnameDataGridViewTextBoxColumn";
+            this.bnameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // mdnameDataGridViewTextBoxColumn
+            // 
+            this.mdnameDataGridViewTextBoxColumn.DataPropertyName = "mdname";
+            this.mdnameDataGridViewTextBoxColumn.HeaderText = "Model";
+            this.mdnameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.mdnameDataGridViewTextBoxColumn.Name = "mdnameDataGridViewTextBoxColumn";
+            this.mdnameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // mdnumDataGridViewTextBoxColumn
+            // 
+            this.mdnumDataGridViewTextBoxColumn.DataPropertyName = "mdnum";
+            this.mdnumDataGridViewTextBoxColumn.HeaderText = "Mod No.";
+            this.mdnumDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.mdnumDataGridViewTextBoxColumn.Name = "mdnumDataGridViewTextBoxColumn";
+            this.mdnumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // qtyDataGridViewTextBoxColumn
+            // 
+            this.qtyDataGridViewTextBoxColumn.DataPropertyName = "qty";
+            this.qtyDataGridViewTextBoxColumn.HeaderText = "Qty";
+            this.qtyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.qtyDataGridViewTextBoxColumn.Name = "qtyDataGridViewTextBoxColumn";
+            this.qtyDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // noteDataGridViewTextBoxColumn
+            // 
+            this.noteDataGridViewTextBoxColumn.DataPropertyName = "note";
+            this.noteDataGridViewTextBoxColumn.HeaderText = "About";
+            this.noteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.noteDataGridViewTextBoxColumn.Name = "noteDataGridViewTextBoxColumn";
+            this.noteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // date1DataGridViewTextBoxColumn
+            // 
+            this.date1DataGridViewTextBoxColumn.DataPropertyName = "date1";
+            this.date1DataGridViewTextBoxColumn.HeaderText = "Date";
+            this.date1DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.date1DataGridViewTextBoxColumn.Name = "date1DataGridViewTextBoxColumn";
+            this.date1DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // otimeDataGridViewTextBoxColumn
+            // 
+            this.otimeDataGridViewTextBoxColumn.DataPropertyName = "otime";
+            this.otimeDataGridViewTextBoxColumn.HeaderText = "Time";
+            this.otimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.otimeDataGridViewTextBoxColumn.Name = "otimeDataGridViewTextBoxColumn";
+            this.otimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // addItemBindingSource
+            // 
+            this.addItemBindingSource.DataMember = "addItem";
+            this.addItemBindingSource.DataSource = this.vbcbaseDataSet5;
+            // 
+            // vbcbaseDataSet5
+            // 
+            this.vbcbaseDataSet5.DataSetName = "vbcbaseDataSet5";
+            this.vbcbaseDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // addItemTableAdapter
+            // 
+            this.addItemTableAdapter.ClearBeforeFill = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(682, 437);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 27);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "Description";
+            // 
             // UC_Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.DataArray);
             this.Controls.Add(this.lblNote);
             this.Controls.Add(this.lblPrice);
@@ -374,16 +511,18 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.l);
             this.Controls.Add(this.lb);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.labelTOSET);
+            this.Controls.Add(this.btnSearch1);
+            this.Controls.Add(this.labelTOSET1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtSearchBy);
+            this.Controls.Add(this.txtSearchBy1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.txtSearch1);
             this.Name = "UC_Stock";
             this.Size = new System.Drawing.Size(856, 602);
             this.Enter += new System.EventHandler(this.UC_Stock_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.DataArray)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addItemBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vbcbaseDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,11 +531,11 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2ComboBox txtSearchBy;
+        private Guna.UI2.WinForms.Guna2ComboBox txtSearchBy1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelTOSET;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2ImageButton btnSearch;
+        private System.Windows.Forms.Label labelTOSET1;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch1;
+        private Guna.UI2.WinForms.Guna2ImageButton btnSearch1;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblqty;
         private System.Windows.Forms.Label lblModNum;
@@ -411,5 +550,19 @@
         private System.Windows.Forms.Label lb;
         private System.Windows.Forms.TextBox lblNote;
         private Guna.UI2.WinForms.Guna2DataGridView DataArray;
+        private System.Windows.Forms.DataGridViewTextBoxColumn midDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn inameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mdnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mdnumDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qtyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn otimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource addItemBindingSource;
+        private vbcbaseDataSet5 vbcbaseDataSet5;
+        private vbcbaseDataSet5TableAdapters.addItemTableAdapter addItemTableAdapter;
+        private System.Windows.Forms.Label label2;
     }
 }

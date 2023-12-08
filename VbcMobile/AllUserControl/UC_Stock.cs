@@ -46,9 +46,50 @@ namespace VbcMobile.AllUserControl
             lblModName.Text = ds.Tables[0].Rows[0][3].ToString();
             lblModNum.Text = ds.Tables[0].Rows[0][4].ToString();
             lblqty.Text = ds.Tables[0].Rows[0][5].ToString();
-            lblPrice.Text = ds.Tables[0].Rows[0][7].ToString();
+            
             lblNote.Text = ds.Tables[0].Rows[0][6].ToString();
 
+            // retrive the price from dataset
+            String priceAsString = ds.Tables[0].Rows[0][7].ToString();
+            //convert the string price to double
+            if (double.TryParse(priceAsString, out double priceValue))
+            {
+                String formattedPrice = priceValue.ToString("N2");
+                lblPrice.Text = formattedPrice;
+            }
+
+        }
+
+        Boolean flag;
+
+        private void txtSearchBy1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtSearchBy1.SelectedIndex == 0)
+            {
+                flag = false;
+                labelTOSET1.Text = "Enter Item";
+            }
+            else if (txtSearchBy1.SelectedIndex == 1)
+            {
+                flag = true;
+                labelTOSET1.Text = "Enter Brand";
+            }
+        }
+
+        private void btnSearch1_Click(object sender, EventArgs e)
+        {
+            if (flag == false)
+            {
+                query = "select* from addItem where iname like '" + txtSearch1.Text + "%'";
+                DataSet ds = fn.GetData(query);
+                DataArray.DataSource = ds.Tables[0];
+            }
+            else
+            {
+                query = "select *from addItem where bname like '" + txtSearch1.Text + "%' ";
+                DataSet ds = fn.GetData(query);
+                DataArray.DataSource = ds.Tables[0];
+            }
         }
     }
 }

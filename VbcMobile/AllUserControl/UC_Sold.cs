@@ -21,16 +21,73 @@ namespace VbcMobile.AllUserControl
             InitializeComponent();
         }
 
-        private void UC_Sold_Enter(object sender, EventArgs e)
+     
+        private void btnGo_Click(object sender, EventArgs e)
         {
-            query = "select * from sold";
-            DataSet ds = fn.GetData(query);
-            SoldDataGrid.DataSource = ds.Tables[0];
+            
+            
+            if (combSelect.Text == "All")
+            {
+                query = "select * from sold";
+                DataSet ds = fn.GetData(query);
+                SoldDataGrid.DataSource = ds.Tables[0];
 
-            query = "select * from completed_rep";
-            DataSet ds1 = fn.GetData(query);
-            SoldDataGrid2.DataSource = ds1.Tables[0];
+                query = "select sum(price) from sold";
+                DataSet da1 = fn.GetData(query);
+                
+                if(da1.Tables.Count>0 && da1.Tables[0].Rows.Count>0)
+                {
+                    object sumValue = da1.Tables[0].Rows[0][0];
+                    if(sumValue != DBNull.Value)
+                    {
+                        double sumAsDouble = Convert.ToDouble(sumValue);
+                        lblTotal.Text= " LKr :  "+sumAsDouble.ToString("0,000.00");
+                        
+                    }
+                    else
+                    {
+                        lblTotal.Text = "No Data Available";
+                    }
+                }
+                else
+                {
+                    lblTotal.Text = "No Data Available";
+                }
+
+            }
+            else if (combSelect.Text == "Period")
+            {
+                query = "select * from sold where sdate between '"+dtFrom.Value+"' and '"+dtTo.Value+"' ";
+                DataSet ds = fn.GetData(query);
+                SoldDataGrid.DataSource = ds.Tables[0];
+
+                query = "select sum(price) from sold where sdate between '"+dtFrom.Value+"' and '"+dtTo.Value+"' ";
+                DataSet da1 = fn.GetData(query);
+
+                if (da1.Tables.Count > 0 && da1.Tables[0].Rows.Count > 0)
+                {
+                    object sumValue = da1.Tables[0].Rows[0][0];
+                    if (sumValue != DBNull.Value)
+                    {
+                        double sumAsDouble = Convert.ToDouble(sumValue);
+                        lblTotal.Text = " LKr :  " + sumAsDouble.ToString("0,000.00");
+
+                    }
+                    else
+                    {
+                        lblTotal.Text = "No Data Available";
+                    }
+                }
+                else
+                {
+                    lblTotal.Text = "No Data Available";
+                }
+            }
+            
+            
+           
         }
+
         Boolean flag;
         private void txtSearchBy_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -60,6 +117,27 @@ namespace VbcMobile.AllUserControl
                 DataSet ds =fn.GetData(query);
                 SoldDataGrid.DataSource = ds.Tables[0];
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtFrom_ValueChanged(object sender, EventArgs e)
+        {
+           UC_Sold Lode
+                = new UC_Sold();
+        }
+
+        private void dtTo_ValueChanged(object sender, EventArgs e)
+        {
+            UC_Sold Lode = new UC_Sold();
+        }
+
+        private void combSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     
