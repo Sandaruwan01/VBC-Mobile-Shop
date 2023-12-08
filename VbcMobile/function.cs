@@ -19,7 +19,7 @@ namespace VbcMobile
         }
 
         // to get data by using database
-        //query = "select * from addItem";
+        //query = "select * from tablename";
         public DataSet GetData(String query)
         {
             SqlConnection conn = getConnection();
@@ -42,7 +42,7 @@ namespace VbcMobile
             cmd.CommandText = query;
             cmd.ExecuteNonQuery();
             conn.Close();
-            MessageBox.Show("Data Processed Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Success", "VBC Mobile Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 

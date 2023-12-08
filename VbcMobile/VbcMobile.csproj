@@ -36,20 +36,23 @@
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1586.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1586.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
@@ -81,11 +84,11 @@
     <Compile Include="AllUserControl\UC_Add_New_Item.Designer.cs">
       <DependentUpon>UC_Add_New_Item.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllUserControl\UC_Completed_Repair.cs">
+    <Compile Include="AllUserControl\UC_Add_To_Repair.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AllUserControl\UC_Completed_Repair.Designer.cs">
-      <DependentUpon>UC_Completed_Repair.cs</DependentUpon>
+    <Compile Include="AllUserControl\UC_Add_To_Repair.Designer.cs">
+      <DependentUpon>UC_Add_To_Repair.cs</DependentUpon>
     </Compile>
     <Compile Include="AllUserControl\UC_Customer.cs">
       <SubType>UserControl</SubType>
@@ -99,11 +102,29 @@
     <Compile Include="AllUserControl\UC_Delete.Designer.cs">
       <DependentUpon>UC_Delete.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllUserControl\UC_Repair.cs">
+    <Compile Include="AllUserControl\UC_LogIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AllUserControl\UC_Repair.Designer.cs">
-      <DependentUpon>UC_Repair.cs</DependentUpon>
+    <Compile Include="AllUserControl\UC_LogIn.Designer.cs">
+      <DependentUpon>UC_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Repair_Center.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Repair_Center.Designer.cs">
+      <DependentUpon>UC_Repair_Center.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Reports.Designer.cs">
+      <DependentUpon>UC_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Reports2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_Reports2.Designer.cs">
+      <DependentUpon>UC_Reports2.cs</DependentUpon>
     </Compile>
     <Compile Include="AllUserControl\UC_Sold.cs">
       <SubType>UserControl</SubType>
@@ -117,6 +138,17 @@
     <Compile Include="AllUserControl\UC_Stock.Designer.cs">
       <DependentUpon>UC_Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,11 +170,46 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>vbcbaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="vbcbaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vbcbaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vbcbaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vbcbaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vbcbaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vbcbaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vbcbaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vbcbaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vbcbaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vbcbaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vbcbaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vbcbaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vbcbaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vbcbaseDataSet7.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AllUserControl\UC_Add_New_Item.resx">
       <DependentUpon>UC_Add_New_Item.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllUserControl\UC_Completed_Repair.resx">
-      <DependentUpon>UC_Completed_Repair.cs</DependentUpon>
+    <EmbeddedResource Include="AllUserControl\UC_Add_To_Repair.resx">
+      <DependentUpon>UC_Add_To_Repair.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_Customer.resx">
       <DependentUpon>UC_Customer.cs</DependentUpon>
@@ -150,8 +217,17 @@
     <EmbeddedResource Include="AllUserControl\UC_Delete.resx">
       <DependentUpon>UC_Delete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllUserControl\UC_Repair.resx">
-      <DependentUpon>UC_Repair.cs</DependentUpon>
+    <EmbeddedResource Include="AllUserControl\UC_LogIn.resx">
+      <DependentUpon>UC_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_Repair_Center.resx">
+      <DependentUpon>UC_Repair_Center.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_Reports.resx">
+      <DependentUpon>UC_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_Reports2.resx">
+      <DependentUpon>UC_Reports2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_Sold.resx">
       <DependentUpon>UC_Sold.cs</DependentUpon>
@@ -174,6 +250,28 @@
     <EmbeddedResource Include="Recept.resx">
       <DependentUpon>Recept.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -194,6 +292,83 @@
     </None>
     <None Include="vbcbaseDataSet.xss">
       <DependentUpon>vbcbaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet1.xsc">
+      <DependentUpon>vbcbaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vbcbaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vbcbaseDataSet1.xss">
+      <DependentUpon>vbcbaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet2.xsc">
+      <DependentUpon>vbcbaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vbcbaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vbcbaseDataSet2.xss">
+      <DependentUpon>vbcbaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet3.xsc">
+      <DependentUpon>vbcbaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vbcbaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vbcbaseDataSet3.xss">
+      <DependentUpon>vbcbaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet4.xsc">
+      <DependentUpon>vbcbaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vbcbaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vbcbaseDataSet4.xss">
+      <DependentUpon>vbcbaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet5.xsc">
+      <DependentUpon>vbcbaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vbcbaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vbcbaseDataSet5.xss">
+      <DependentUpon>vbcbaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet6.xsc">
+      <DependentUpon>vbcbaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vbcbaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vbcbaseDataSet6.xss">
+      <DependentUpon>vbcbaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet7.xsc">
+      <DependentUpon>vbcbaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="vbcbaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vbcbaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vbcbaseDataSet7.xss">
+      <DependentUpon>vbcbaseDataSet7.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

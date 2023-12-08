@@ -28,13 +28,18 @@ namespace VbcMobile
         // When the application load, these forms are not load, load when only after the requred button press
         private void Form1_Load(object sender, EventArgs e)
         {
+           
+           
             uC_Add_New_Item1.Visible = false;
             uC_Customer1.Visible = false;
             uC_Stock1.Visible = false;
             uC_Sold1.Visible = false;
             uC_Delete1.Visible = false;
-            uC_Repair1.Visible = false;
-            uC_Completed_Repair1.Visible=false;
+            uC_Add_To_Repair1.Visible = false;
+            uC_Repair_Center1.Visible = false;
+            uC_Reports1.Visible = false;
+            uC_Reports21.Visible = false;
+            
 
             enebleDisable(false,false,false);
 
@@ -64,8 +69,8 @@ namespace VbcMobile
 
         private void btnRepairCenter_Click(object sender, EventArgs e)
         {
-            uC_Repair1.Visible = true;
-            uC_Repair1.BringToFront();
+            uC_Add_To_Repair1.Visible=true;
+            uC_Add_To_Repair1.BringToFront();
         }
 
         private void btnStock_Click(object sender, EventArgs e)
@@ -80,10 +85,24 @@ namespace VbcMobile
             uC_Sold1.BringToFront();
         }
 
+       
+
         private void btnCompleted_Click(object sender, EventArgs e)
         {
-            uC_Completed_Repair1.Visible=true;
-            uC_Completed_Repair1.BringToFront();
+            uC_Repair_Center1.Visible = true;
+            uC_Repair_Center1.BringToFront();
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            uC_Reports1.Visible = true;
+            uC_Reports1.BringToFront();
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            uC_Reports21.Visible = true;
+            uC_Reports21.BringToFront();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -126,6 +145,15 @@ namespace VbcMobile
             }
         }
 
-        
+        private void uC_LogIn1_VisibleChanged(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            btnAddNewItem.Visible = true;
+        }
+
+        private void uC_LogIn1_VisibleChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
